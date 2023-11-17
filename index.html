@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="grafika/favicon.png">
+	<title>Epsilon</title>
+</head>
+<body>
+  <div id="preloader"></div>
+<section class="showcase">
+    <header>
+      <h2 class="logo">Epsilon</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="grafika/video.mp4" playsinline autoplay muted loop></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>PRETVORITE</h2> 
+      <h3>SNOVE U REALNOST</h3>
+      <p>Kroz vešto korišćenje najsavremenijih tehnika,
+        tehnologija i kreativnosti, Epsilon transformiše koncepte i
+        ideje u stvarnost, pomažući klijentima da prenesu svoju viziju
+        na način koji će inspirisati, oduševiti i ubediti.</p>
+      <a href="contact.html">KONTAKT</a>
+    </div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Saznaj više</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+  	 var loader = document.getElementById("preloader");
+     window.addEventListener("load", function(){
+      loader.style.display = "none";
+     })
+     
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>

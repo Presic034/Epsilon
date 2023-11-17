@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="contactstyle.css">
+	<link rel="icon" type="image/x-icon" href="grafika/favicon.png">
+	<title>Epsilon</title>
+</head>
+<body>
+  <div id="preloader"></div>
+<section class="showcase">
+    <header>
+      <h2 class="logo">Epsilon</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="grafika/bgvideo.mp4" playsinline muted loop autoplay></video>
+    <div class="container">
+        <form action="https://formspree.io/f/mnqkwwwp" method="POST">
+            <h1>Kontaktiraje nas</h1>
+            <input type="text" id="firstName" name="ime" placeholder="Ime" required>
+            <input type="text" id="lastName" name="prezime" placeholder="Prezime" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="mobile" name="mobile" placeholder="Broj telefona" required>
+            <h4>Unesite vašu poruku ovde...</h4>
+            <textarea name="message" id="Message" required></textarea>
+            <input type="submit" value="Pošalji" id="button">
+        </form>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Saznaj više</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    var loader = document.getElementById("preloader");
+     window.addEventListener("load", function(){
+      loader.style.display = "none";
+     })
+
+  	 const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
