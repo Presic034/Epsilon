@@ -178,7 +178,7 @@ header .logo
   }
 }
 #preloader{
-  background: #1b1b1b url(grafika/loader.gif) no-repeat center;
+  background: #1b1b1b url(https://media.githubusercontent.com/media/Presic034/Epsilon/main/grafika/loader.gif) no-repeat center;
   height: 100vh;
   width: 100%;
   position: fixed;
