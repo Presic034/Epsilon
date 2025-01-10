@@ -28,15 +28,16 @@ header .logo
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(grafika/menuicon.png);
+  background: url(https://cdn-icons-png.flaticon.com/512/7216/7216128.png;
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
   cursor: pointer;
+  filter: invert(1);
 }
 .toggle.active
 {
-  background: url(grafika/closeicon.png);
+  background: url(https://static.thenounproject.com/png/357978-200.png);
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
